@@ -1,0 +1,181 @@
+<!DOCTYPE public_html>
+
+<html lang="en">
+<head>
+<file>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('imgs/mc.jpg');
+  min-height: 10%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("imgs.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</file>
+</head>
+</html>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="Index.html" class="w3-bar-item w3-button">HOME</a> 
+    <a href="aboutme.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="portfolio.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-money"></i> PRICING</a>
+     <a href="FAQS.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-question"></i> FAQS</a>
+      <a href="MERCH.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-female"></i>MERCH</a>
+    </a>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="aboutme.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">JUlIANNA <span class="w3-hide-small">D</span> PHOTOGRAPHY</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">PHOTO SHOOTS FOR DANCERS</h3>
+  <p class="w3-center"><em>Established in 2013.</em></p>
+    </div>
+
+    <!-- The Band Section -->
+    <div class="w3-container w3-content w3-center w3-padding-64" id="band">
+      <h2 class="w3-wide">YOU ARE ART.</h2>
+      <p class="w3-opacity"><i>Lets Create Some Magic!</i></p>
+      <p class="w3-justify">Below are some upcoming events that you can sign up for! These sessions are open to all dancers, any age - any level. Email me to inquire a session.</p>
+      <div class="w3-row-padding">
+        <div class="w3-quarter">
+          <p>Paint Shoots</p>
+          <img src="imgs/paint.jpg" class="w3-hover-opacity" alt="" style="width:50%">
+        </div>
+        <div class="w3-quarter">
+          <p>Powder Shoots</p>
+          <img src="imgs/powder.jpg" class="w3-hover-opacity" alt="" style="width:50%">
+        </div>
+        <div class="w3-quarter">
+          <p>Studio Shoots</p>
+          <img src="imgs/studio.jpg" class="w3-hover-opacity" alt="" style="width:50%">
+        </div>
+        <div class="w3-quarter">
+          <p>Location Shoots</p>
+          <img src="imgs/outdoor.jpg" class="w3-hover-opacity" alt="" style="width:50%">
+      </div>
+    </div>
+
+    <!-- The Tour Section -->
+    <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">TRAVEL DATES</h2>
+      <p class="w3-opacity w3-center"><i>Up and coming locations! Sign Up Before Spots Fill!</i></p><br>
+      <div class="w3-row-padding">
+        <div class="w3-third">
+          <img src="imgs/nyc.jpg" alt="nyc" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>NEW YORK CITY, NY</b></p>
+            <p class="w3-opacity">May 2021</p>
+            <p>Press Here To Sign Up!</p>.  <button type="button" a href="PRICING.html"><a href="PRICING.html" class="btn btn-primary btn-lg">BOOK NOW</a>
+          </div>
+        </div>
+        <div class="w3-third">
+          <img src="imgs/bos.jpg" alt="bos" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>BOSTON, MASS</b></p>
+            <p class="w3-opacity">June 2021</p>
+            <p>Press Here To Sign Up!</p>
+           <button type="button" a href="PRICING.html"><a href="PRICING.html" class="btn btn-primary btn-lg">BOOK NOW</a>
+          </div>
+        </div>
+        <div class="w3-third">
+          <img src="imgs/la.jpg" alt="la" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>LOS ANGELES, CA </b></p>
+            <p class="w3-opacity">July 2021</p>
+            <p>Press Here To Sign Up!</p> 
+            <button type="button" a href="PRICING.html"><a href="PRICING.html" class="btn btn-primary btn-lg">BOOK NOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+    <!-- The Contact Section -->
+    <div class="w3-container w3-content w3-center w3-padding-64" id="contact">
+      <h2 class="w3-wide w3-center">CONTACT</h2>
+      <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+     
+        <i class="fa fa-phone"></i> <br> Instagram: Julianna.D.Photography<br>
+        <i class="fa fa-envelope"></i> <br> Email: mail@mail.com<br>
+        
+        <p class="w3-justify"> Thank you so much for looking into my photography! Hope to work with you soon! For more information feel free to follow my instagram for daily updates. </p> 
+        <a href="https://www.instagram.com/julianna.d.photography/">CLICK HERE FOR MY INSTAGRAM</a>
+      </div>
+    </div>
+  <!-- End Page Content -->
+  </div>
+
+  <!-- Footer -->
+  </footer>
+</body>
+</html>
+
+</body>
+</html>
+<file>

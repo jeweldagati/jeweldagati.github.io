@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC>
+
+<BRANCH> <BRANCH>
+<html lang="en">
+<head>
+<file>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('imgs/group.jpg');
+  min-height: 30%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("imgs.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+  /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {
+  margin-left: 120px;
+}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {
+  #main {margin-left: 0;}
+}
+ 
+  
+    /* Styling the area of the slides */
+    #slideshow {
+      overflow: hidden;
+      height: px;
+      width: 708px;
+      margin: 0 auto;
+    }
+  
+    /* Style each of the sides 
+    with a fixed width and height */
+    .slide {
+      float: left;
+      height: 780px;
+      width: 728px;
+    }
+  
+    /* Add animation to the slides */
+    .slide-wrapper {
+  
+      /* Calculate the total width on the
+      basis of number of slides */
+      width: calc(1000px * 41);
+        
+      /* Specify the animation with the
+      duration and speed */
+      animation: slide 10s ease infinite;
+    }
+  
+    /* Set the background color
+    of each of the slides */
+    .slide:nth-child(1) {
+      background-image: url('imgs/stell.jpg')
+    }
+  
+    .slide:nth-child(2) {
+      background:  url('imgs/group.jpg')
+    }
+  
+    .slide:nth-child(3) {
+      background: url('imgs/kayandbray.jpg')
+    }
+  
+    .slide:nth-child(4) {
+      background:url('imgs/sam.jpg')
+    }
+  
+    /* Define the animation 
+    for the slideshow */
+    @keyframes slide {
+  
+      /* Calculate the margin-left for 
+      each of the slides */
+      50% {
+        margin-left: 0px;
+      }
+  
+      40% {
+        margin-left: calc(-728px * 1);
+      }
+  
+      60% {
+        margin-left: calc(-728px * 2);
+      }
+  
+      80% {
+        margin-left: calc(-728px * 3);
+      }
+    }
+</style>
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="Index.html" class="w3-bar-item w3-button">HOME</a> 
+    <a href="aboutme.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="portfolio.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="PRICING.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-money"></i> PRICING</a>
+     <a href="FAQS.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-question"></i> FAQS</a>
+      <a href="MERCH.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-female"></i>MERCH</a>
+    </a>
+    </a>
+  </div>
+    </a>
+  </div>
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#Homepage" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">JUlIANNA <span class="w3-hide-small">D</span> PHOTOGRAPHY</span>
+  </div>
+</div>
+<!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-black">My Portfolio</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding">
+      <div class="w3-half">
+        <img src="imgs/aydin.jpg" alt="" style="width:100%">
+        <img src="imgs/kay.jpg" alt="" style="width:100%">
+        <img src="imgs/kate.jpg" alt="" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="imgs/gg.jpg" alt="" style="width:100%">
+        <img src="imgs/lane.jpg" alt="" style="width:100%">
+        <img src="imgs/nc.jpg" alt="" style="width:100%">
+        
+      </div>
+
+    <!-- End pho<div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-black">My Portfolio</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+rid for photos -->
+    <div class="w3-row-padding">
+      <div class="w3-half">
+        <img src="imgs/outdoor.jpg" alt="" style="width:100%">
+        <img src="imgs/studio.jpg" alt="" style="width:100%">
+        <img src="imgs/powder.jpg" alt="" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="imgs/sam.jpg" alt="" style="width:100%">
+        <img src="imgs/zara.jpg" alt="" style="width:100%">
+        <img src="imgs/stella.jpg" alt="" style="width:100%">
+        
+      </div>
+<div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-black"></h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding">
+      <div class="w3-half">
+        <img src="imgs/katelee.jpg" alt="" style="width:100%">
+        <img src="imgs/kayandbray.jpg" alt="" style="width:100%">
+        <img src="imgs/stell.jpg" alt="" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="imgs/ava.jpg" alt="" style="width:100%">
+        <img src="imgs/athena.jpg" alt="" style="width:100%">
+        <img src="imgs/anna.jpg" alt="" style="width:100%">
+        
+      </div>
+
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+  <!-- End Contact Section -->
+
+
+
+</head>
+<body>
+  
+  <!-- Define the slideshow container -->
+  <div id="slideshow">
+    <div class="slide-wrapper">
+  
+      <!-- Define each of the slides
+         and write the content -->
+      <div class="slide">
+        <h1 class="slide-number">
+         
+        </h1>
+      </div>
+      <div class="slide">
+        <h1 class="IMGS/paint.jpg">
+           
+        </h1>
+      </div>
+      <div class="slide">
+        <h1 class="imgs/nyC.jpg">
+           
+        </h1>
+      </div>
+      <div class="slide">
+        <h1 class="imgs/studio.jpg">
+           
+        </h1>
+      </div>
+</body>
+</html>
+
